@@ -19,6 +19,7 @@ ActiveStorage.start()
 //   alert('hey!');
 // } );
 
-$(function() {
+$(document).on('turbolinks:load', function() {
   $(".dropdown-trigger").dropdown();
+  $('.sidenav').sidenav();
 })
